@@ -2,5 +2,5 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path('licences/', get_lincenc)
+    path('', index_page)
 ]

@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-  doors_app:
+  goodoo_app:
     container_name: goodoo_app
     restart: always
     build:

@@ -11,7 +11,7 @@ services:
     volumes:
       - ./staticfiles:/app/staticfiles
       - ./media:/app/media
-      - ./static:/app/static
+#      - ./static:/app/static
     env_file:
       .env
     ports:

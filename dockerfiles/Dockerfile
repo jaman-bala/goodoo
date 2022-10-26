@@ -3,12 +3,11 @@ ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV TZ=Asia/Bishkek
 
-RUN apt-get add --no-cache jpeg-dev \
-    gcc postgresql-dev \
-    linux-headers musl-dev libffi-dev \
-    libxml2-dev libxslt-dev imagemagick-dev \
-    zlib-dev py3-magic  make \
-    && rm -rf /var/apt/list/*
+#RUN apk add --no-cache jpeg-dev \
+#    gcc postgresql-dev \
+#    linux-headers musl-dev libffi-dev \
+#    libxml2-dev libxslt-dev imagemagick-dev \
+#    zlib-dev py3-magic  make \
 WORKDIR /app
 
 COPY requirements.txt requirements.txt

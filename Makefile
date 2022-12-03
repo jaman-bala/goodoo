@@ -9,12 +9,11 @@ run: migrate collectstatic clean
 	gunicorn -w 4 --bind 0.0.0.0:8000 main.wsgi --reload
 
 
-
 .PHONY: collectstatic
 collectstatic:
 	@echo "Copying collectstatic files..."
 	python manage.py collectstatic --noinput
-	
+
 .PHONY: clean
 clean:
 	@echo -n "Clear temp files..."

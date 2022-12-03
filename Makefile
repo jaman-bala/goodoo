@@ -12,7 +12,7 @@ run: migrate collectstatic clean
 .PHONY: collectstatic
 collectstatic:
 	@echo "Copying collectstatic files..."
-	python manage.py collectstatic --noinput
+	python3 manage.py collectstatic --noinput
 
 .PHONY: clean
 clean:

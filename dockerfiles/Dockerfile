@@ -8,7 +8,7 @@ RUN apk add --no-cache jpeg-dev \
     linux-headers musl-dev libffi-dev \
     libxml2-dev libxslt-dev imagemagick-dev \
     zlib-dev py3-magic  make \
-WORKDIR /app
+WORKDIR /main
 
 COPY requirements.txt requirements.txt
 

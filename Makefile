@@ -1,7 +1,7 @@
 .PHONY: migrate
 migrate:
 	@echo "Migrating database..."
-	python manage.py migrate --noinput
+	python3 manage.py migrate --noinput
 
 .PHONY: run
 run: migrate collectstatic clean
@@ -12,7 +12,7 @@ run: migrate collectstatic clean
 .PHONY: collectstatic
 collectstatic:
 	@echo "Copying collectstatic files..."
-	python manage.py collectstatic --noinput
+	python3 manage.py collectstatic --noinput
 
 .PHONY: clean
 clean:
